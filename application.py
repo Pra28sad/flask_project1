@@ -4,8 +4,8 @@ import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 
-app = Flask(__name__)
-
+application = Flask(__name__)
+app = application
 @app.route("/",methods=["POST","GET"])
 def index():
     product_details = []
