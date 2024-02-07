@@ -32,5 +32,5 @@ def get_product_details(product_name):
     df = pd.DataFrame({"Product Name": products, "Price": prices, "Rating": ratings})
     return df.to_dict("records")
 if __name__ == "__main__":
-    app.run(host="0.0.0.0",port=5050)
+    app.run(host="0.0.0.0",port=8000)
     
